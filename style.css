@@ -1,31 +1,69 @@
-img {
-    border-radius: 10px;
-    /* Adjust the value to control the roundness of corners */
-}
-
 body {
     margin: 0;
-    /* remove default body margins */
+    font-size: 14px;
 }
 
+/* This is template for white background */
+.template-empty-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 460px;
+}
+
+/* A green angled block of colour */
 .color-container {
+    display: flex;
     background-color: #42DEC4;
     clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 80% 70%, 0% 90%);
-    height: 450px;
     width: 100%;
-    position: absolute;
-    /* position on top of grey container */
-    top: 0;
-    left: 0;
+    position: relative;
 }
 
-
+/* A grey rectangle */
 .grey-container {
     background-color: #E9E9E9;
+    display: flex;
     width: 100%;
-    height: 450px;
     position: relative;
-    /* allows positioning child element */
+    height: 460px;
+}
+
+/* Container for text and image   */
+.template-row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* text container */
+.template-text {
+    flex: 0 0 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative;
+  
+}
+
+/* image container */
+.template-image-container {
+    flex: 0 0 50%;
+    display: flex;
+    z-index: 100;
+    height: 400px;
+    align-items: center;
+    padding-top:20px;
+}
+
+/*  image styling in the image container */
+.template-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 
@@ -209,46 +247,6 @@ li {
 /* Care for your loved ones section  */
 
 
-.care-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightblue; */
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-.care-image-container {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    /* position: relative; */
-    align-self: top;
-    /* Position relative for absolute positioning */
-    /* border: solid 5px pink; */
-    z-index: 1;
-}
-
-.care-image-container img {
-    width: 90%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-    /* border: solid 5px yellow; */
-
-}
-
-.care-text {
-    flex: 0 0 40%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 0px 0px;
-    /* Add padding for spacing */
-    /* border: solid 5px pink; */
-}
-
 .tick-text {
     display: flex;
     align-items: center;
@@ -318,7 +316,7 @@ li {
 } */
 
 @media only screen and (max-width: 768px) {
-    .care-text {
+    .template-text {
         font-size: 0.8rem;
         /* Adjust the font size as needed */
     }
@@ -379,7 +377,7 @@ li {
 
 /* Additional media query */
 @media only screen and (max-width: 480px) {
-    .care-text {
+    .template-text {
         font-size: 0.7rem;
         /* Adjust the font size as needed */
     }
@@ -447,6 +445,7 @@ li {
     /* font-size: 1rem; */
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .grey-button:first-child {
@@ -624,7 +623,7 @@ li {
         /* Adjust padding for smaller screens */
     }
 
-    .secure-image-container{
+    .secure-image-container {
         width: 100%;
         padding-left: 20px;
     }
@@ -655,7 +654,9 @@ li {
     align-items: center;
     /* border: solid 5px palevioletred; */
     margin-bottom: 0px;
+    padding-bottom: 20px;
     /* Adjust this margin as needed */
+    background-color: #10d3bb;
 }
 
 .pricing-title h1,
@@ -672,8 +673,8 @@ h3 {
     /* made the containers big but the main headings left aligned */
     width: 100%;
     /* border: solid 5px palevioletred; */
-    padding-bottom: 50px;
-    background-color: lightgray;
+    /* padding-bottom: 50px; */
+    /* background-color: #10d3bb; */
 
 }
 
@@ -771,7 +772,7 @@ h3 {
     font-size: 0.6rem;
     font-weight: normal;
 }
-}
+
 
 .btn:hover {
     background-color: #0056b3;
@@ -1115,14 +1116,6 @@ h3 {
 }
 
 
-/* Media query for smaller screens */
-/* @media screen and (max-width: 768px) {
-    #life-vault {
-        height: 40px;
-        /* Adjust height for smaller screens if needed */
-/* } */
-/* } */
-
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -1224,7 +1217,7 @@ h3 {
 @media screen and (max-width: 768px) {
     .features-image-container {
         padding: 30px;
-        * Adjust padding for smaller screens */
+        /* Adjust padding for smaller screens */
     }
 
     .features-image-container,
@@ -1255,7 +1248,7 @@ h3 {
 @media only screen and (max-width: 480px) {
     .features-image-container {
         padding: 30px;
-        * Adjust padding for smaller screens */
+        /* Adjust padding for smaller screens */
     }
 
     .features-image-container,
@@ -1434,9 +1427,6 @@ h3 {
 
 .tick-text p {
     margin-bottom: 1px;
-    /* Adjust this value as needed */
-    font-size: .9rem;
-    /* font-weight: bold; */
 }
 
 
@@ -1482,8 +1472,6 @@ h3 {
     .tick-text p {
         margin-bottom: 1px;
         /* Adjust this value as needed */
-        font-size: .7rem;
-        /* font-weight: bold; */
     }
 }
 
@@ -1527,8 +1515,6 @@ h3 {
     .tick-text p {
         margin-bottom: 1px;
         /* Adjust this value as needed */
-        font-size: .6rem;
-        /* font-weight: bold; */
     }
 }
 
@@ -1797,7 +1783,7 @@ h3 {
 }
 
 @media only screen and (max-width: 480px) {
-.about-us-container {
+    .about-us-container {
         padding: 40px 20px 20px 10px;
         /* Adjust padding for smaller screens */
     }
@@ -1818,7 +1804,7 @@ h3 {
         /* Decrease font size for smaller screens */
     }
 
-    
+
 }
 
 .unique-selling-container {
@@ -2198,104 +2184,106 @@ h3 {
         font-size: 0.8rem;
         /* Decrease font size for smaller screens */
     }
+}
 
-    @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
-        .our-prices-container,
-        .security-container,
-        .team-container {
-            padding: 10px;
-            /* Adjust padding for smaller screens */
-        }
+    .our-prices-container,
+    .security-container,
+    .team-container {
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
 
-        .streamline-container{
-            padding: 10px 30px 10px 10px;
-        }
-    
-        .our-prices-image-container,
-        .our-prices-text,
-        .streamline-image-container,
-        .security-image-container,
-        .team-image-container {
-            width: 100%;
-            /* Set width to 100% for smaller screens */
-        }
-    
-        .our-prices-text,
-        .streamline-content,
-        .security-content,
-        .pricing-title,
-        .team-content {
-            font-size: 0.7rem;
-            /* Decrease font size for smaller screens */
-        }
+    .streamline-container {
+        padding: 10px 30px 10px 10px;
+    }
 
-    @media screen and (max-width: 768px) {
+    .our-prices-image-container,
+    .our-prices-text,
+    .streamline-image-container,
+    .security-image-container,
+    .team-image-container {
+        width: 100%;
+        /* Set width to 100% for smaller screens */
+    }
 
-        .our-prices-text {
-            margin: 0 40px 0 0;
+    .our-prices-text,
+    .streamline-content,
+    .security-content,
+    .pricing-title,
+    .team-content {
+        font-size: 0.7rem;
+        /* Decrease font size for smaller screens */
+    }
+}
 
+@media screen and (max-width: 768px) {
 
-            /* Adjust margin for smaller screens */
-        }
-
-        .our-prices-container,
-        .color-container,
-        .grey-container {
-            height: 350px;
-        }
-
-        .our-prices-image-container {
-            padding-left: 15px;
-        }
+    .our-prices-text {
+        margin: 0 40px 0 0;
 
 
+        /* Adjust margin for smaller screens */
+    }
 
-        .streamline-content {
-            margin: 0 20px;
-            /* Adjust margin for smaller screens */
-        }
+    .our-prices-container,
+    .color-container,
+    .grey-container {
+        height: 350px;
+    }
 
-        .security-image-container {
-            margin-right: 30px;
-        }
-
-
+    .our-prices-image-container {
+        padding-left: 15px;
     }
 
 
-    @media only screen and (max-width: 480px) {
 
-        .our-prices-text {
-            margin: 0 40px 0 0;
-
-
-            /* Adjust margin for smaller screens */
-        }
-
-        .our-prices-container,
-        .color-container,
-        .grey-container {
-            height: 350px;
-        }
-
-        .our-prices-image-container {
-            padding-left: 15px;
-        }
-
-
-
-        .streamline-content {
-            margin: 0 20px;
-            /* Adjust margin for smaller screens */
-        }
-
-        .security-image-container {
-            margin-right: 30px;
-        }
-
-
+    .streamline-content {
+        margin: 0 20px;
+        /* Adjust margin for smaller screens */
     }
+
+    .security-image-container {
+        margin-right: 30px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .our-prices-text {
+        margin: 0 40px 0 0;
+
+
+        /* Adjust margin for smaller screens */
+    }
+
+    .our-prices-container,
+    .color-container,
+    .grey-container {
+        height: 350px;
+    }
+
+    .our-prices-image-container {
+        padding-left: 15px;
+    }
+
+
+
+    .streamline-content {
+        margin: 0 20px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .security-image-container {
+        margin-right: 30px;
+    }
+
+
+}
 
 /* streamline styling */
 /* Also used for highest standards of security styling on page Our prices */
@@ -2489,6 +2477,7 @@ input[type="submit"]:hover {
         /* Decrease font size for smaller screens */
     }
 }
+
 /* Contact us FAQS */
 
 .faq-container {
@@ -2529,7 +2518,7 @@ input[type="submit"]:hover {
     display: block;
     padding: 10px;
     text-decoration: none;
-    4r color: inherit;
+    color: inherit;
 }
 
 .faq-answer {
@@ -2729,16 +2718,77 @@ input[type="submit"]:hover {
     }
 }
 
-/* #back_to_top>span {
-        width: 40px;
-        height: 40px;
-        line-height: 40px; /* Adjusted to match the height of the circle */
-/* border-radius: 20px;
-    } */
 
-/* #back_to_top span i,
-    #back_to_top span span {
-        font-size: 18px;
-        line-height: 40px; /* Adjusted to match the height of the circle */
-/* }
-} */
+
+
+
+/* price plans table  */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.comparison-table th {
+    /* background-color: #f2f2f2; */
+    font-weight: bold;
+}
+
+.premium {
+    background-color: #d9ead3;
+}
+
+.bronze {
+    background-color: #b45f06;
+    color: black;
+}
+
+.silver {
+    background-color: #d9d9d9;
+}
+
+.gold {
+    background-color: #ffe599;
+}
+
+.tick {
+    color: #10d3bb;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.8rem;
+        text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.5rem;
+        padding: 6px;
+        text-wrap: wrap;
+    }
+
+    .comparison-table th {
+        font-size: 0.6rem;
+        text-wrap: wrap;
+    }
+}
