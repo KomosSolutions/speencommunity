@@ -1,0 +1,357 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#logo-image {
+  max-width: 250px;
+  max-height: 100px;
+}
+
+/* moved the nav to the right  */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between; /* Distribute elements evenly */
+  align-items: center; /* Align logo and navigation vertically */
+}
+
+/* styled the nav list*/
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* styled the sign in button  */
+#sign-in-button {
+  background-color: #10d3bb; /* Light green color */
+  border: none;
+  height: 30px;
+  width: 200px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 5px; /*  rounded corner radius */
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+
+.btn, .btn1 {
+  background-color: slategray; 
+  border: none;
+  height: 30px;
+  width: 250px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 5px; /*  rounded corner radius */
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+/* Image container style */
+.image-container {
+  position: relative;
+  width: 100%; /* Or desired width */
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 20%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    color: black;
+    font-size: 18px;
+}
+
+.tick-bullet {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+/* what do we offer section  */
+
+
+/* Centered headings */
+.centered-heading {
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.presenting-container,
+.presentinga8-container {
+  flex: 1;
+  margin: 10px;
+  max-width: 700px; /* Adjust as needed */
+}
+
+.presenting-image,
+.presenting-a8image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Adjust styles as needed */
+.presenting-image img,
+.presenting-a8image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.presenting-description,
+.presenting-a8description {
+  margin-top: 10px;
+}
+
+/* Adjust button styles */
+button {
+  background-color: slategray;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for securing section */
+.securing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.securing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.securing-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.securing-description {
+  text-align: center;
+}
+
+
+/* Media Query for tablet and desktop */
+@media only screen and (min-width: 768px) {
+  .securing-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .securing-image {
+    margin-right: 20px;
+  }
+  
+  .securing-description {
+    text-align: left;
+    max-width: 60%; /* Adjust as needed */
+  }
+}
+
+/* Media Query for mobile */
+@media only screen and (max-width: 767px) {
+  .securing-content {
+    flex-direction: column;
+  }
+}
+
+/* /* Responsive Styles * need to look at this as don't have header, main / */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
+  main {
+    padding: 20px 10px;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Pricing section  */
+
+/* CSS for layout and styling */
+
+#pricing-products {
+  background-color: #f0f0f0; /* Grey background color */
+  padding: 20px; /* Add padding around the section */
+  text-align: center; /* Center align the content */
+}
+/* Center the headings */
+.pricing-heading, .pricing-subheading {
+  text-align: center;
+}
+
+/* Style for the article-wrap */
+.article-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Style for each article */
+.article-wrap article {
+  flex: 1;
+  max-width: 250px; /* Adjust as needed */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Style for the tick bullets */
+.tick-bullet {
+  width: 20px; /* Adjust as needed */
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Style for the unordered list */
+.article-wrap article ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Style for the buttons */
+.btn {
+  display: inline;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #10d3bb;
+  color: #fff;
+  padding: 7px 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Testimonials section */
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials-image {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.testimonials-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonials-description {
+  max-width: 600px; /* Adjust max-width as needed */
+  padding: 0 20px;
+}
+
+/* Optional: Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+  .testimonials-container {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .testimonials-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .testimonials-description {
+    padding: 0 40px;
+  }
+}
+
+
+/*
+Ds Footer styles
+*/
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: gray;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left a {
+  margin-right: 15px;
+  color: white;
+ text-decoration: none;
+}
+
+.footer-right i {
+  font-size: 20px;
+  margin-right: 10px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Life Vault</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("header.html");
+        });
+        $(function () {
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JY9M553L24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JY9M553L24');
+</script>
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+    <div class="wrapper">
+        <div class="help-container">
+            <div class="help-content">
+                
+                <h1>We’re Always Happy To Help</h1>
+                <p>If you have any additional inquiries, we would
+                    appreciate hearing from you. <br><br> Kindly send us a
+                    message using our contact form, and a member
+                    of our team will respond to you at their earliest
+                    convenience.</p>
+            </div>
+            <div class="form-container">
+                <form action="#">
+                    <h2>Contact Form</h2>
+                    <label for="full-name"></label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Full name" required>
+
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email address" required>
+
+                    <label for="company-name"></label>
+                    <input type="text" id="company-name" name="company-name"
+                        placeholder="Company name (if applicable)">
+
+                    <label for="message"></label>
+                    <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Message (max 500 words)"
+                        required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!-- <div class="faq-container" >
+        <div class="faq-image">
+            <img src="images/Asset 10@300x.jpg" alt="laptop and question marks image">
+        </div>
+        <div class="faq-content" id="faqs-jump">
+            <h2>FAQ'S</h2>
+            <p>Discover comprehensive information on utilising your
+                account by referring to the details provided below. Should
+                you have any additional inquiries, kindly reach out to a
+                LifeVault team member, who will gladly assist you.</p>
+
+            <p><a href="faq1.html">How do I use Life Vault to store my important information?</a></p>
+
+            <p><a href="faq2.html">What documents should I store within my account?</a></p>
+            <p><a href="faq3.html">How many files can I upload to my Storage space?</a></p>
+        </div>
+    </div> -->
+
+    <div class="download-container">
+        <img src="images/LIfe Vault Icon Black.png" alt="Life Vault logo" id="life-vault">
+        <h2>Download our app</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, reprehenderit.
+        <br>
+        <div class="download-button-container">
+            <button class="download-button">Download on the <br> App Store</button>
+            <button class="download-button">Get it on <br>Google Play</button>
+        </div>
+
+    </div>
+
+    <!-- Footer  -->
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Life Vault</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("header.html");
+        });
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JY9M553L24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JY9M553L24');
+</script>
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="about-us-container">
+        <div class="about-us-content">
+            <div class="about-us-text">
+                <h1>About Us</h1>
+                <p>A secure blockchain platform allowing you full control
+                    of your digital life. Verifying financial and personal data
+                    with the ability to share sensitive information with loved
+                    ones after you pass.</h3><br>
+                <button class="grey-button">Start your FREE trial!</button>
+                <button class="grey-button">Our Features</button>
+            </div>
+        </div>
+        <div class="about-us-image-container">
+            <img src="images/Asset 15@300x (1).jpg" alt="Team looking at laptop image">
+        </div>
+    </div>
+
+    <!-- unique selling -->
+
+    <div class="two-column-container">
+        <div class="safeguard-image">
+            <img src="images/Asset 14_2@300x.jpg" alt="Team meeting looking at flipchart">
+        </div>
+
+        <div class="safeguard-content">
+            <h2>Our Unique Selling Point</h2>
+            <div class="tick-text">
+                <img src="images/tick-bullet.png" alt="Tick image" />
+                <h3>Blockchain secured platform for Personally
+                    identifiable financial information (PIFI)</h3>
+            </div>
+            <div class="tick-text">
+                <img src="images/tick-bullet.png" alt="Tick image" />
+                <h3>Customers in control of who can see
+                    their data with easy share function</h3>
+            </div>
+            <div class="tick-text">
+                <img src="images/tick-bullet.png" alt="Tick image" />
+                <h3>Easy shareable time sensitive link</h3>
+            </div>
+            <div class="tick-text">
+                <img src="images/tick-bullet.png" alt="Tick image" />
+                <h3>Secure storage of digital life - Passwords,
+                    logins, Phone code and much more.</h3>
+            </div>
+            <div class="tick-text">
+                <img src="images/tick-bullet.png" alt="Tick image" />
+                <h3>Release of your digital life data to next of kin
+                    upon passing with Death certificate number</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="company-container">
+        <img src="images/pexels-pixabay-35967.jpg" alt="London Gherkin" class="background-image">
+        <div class="container">
+            <div class="row"><strong>Company Update</strong></div>
+            <div class="video-container">
+                <video id="company-video" poster="#" controls> 
+                    <!-- The poster attribute in the <video> tag specifies an image to be shown while the video is downloading, or until the user hits the play button. In your code snippet, poster="#" indicates that there is no specific poster image provided; instead, it would use a placeholder. The controls attribute enables the browser's default video controls (such as play, pause, volume control, etc.) for the video element. -->
+                    <source src="your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="row">
+                <button id="play-video">Play Video</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="company-container">
+        <div class="company-update">
+            <h1>Company Update</h1>
+            <div class="video-container">
+                <video id="company-video" poster="#" controls> 
+                    <!-- The poster attribute in the <video> tag specifies an image to be shown while the video is downloading, or until the user hits the play button. In your code snippet, poster="#" indicates that there is no specific poster image provided; instead, it would use a placeholder. The controls attribute enables the browser's default video controls (such as play, pause, volume control, etc.) for the video element. -->
+                    <!-- <source src="your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="images/Asset 14@300x.jpg" alt="London Gherkin" class="background-image">
+            </div>
+            <button id="play-video">Play Video</button>
+        </div>
+    </div> --> 
+
+
+    <div class="team-container">
+        <div class="team-content">
+            <h2>About Our Team</h2>
+            <h4>The oldest of friends and two start-up and
+                entrepreneurial-minded individuals with a
+                combined experience of almost five decades.
+                <br><br>
+                Steve has startup and business management
+                experience spanning 25 years.
+                <br><br>
+                Dan brings very strong project management
+                and business acumen to the table.
+            </h4>
+
+        </div>
+        <div class="team-image-container">
+            <img src="images/Asset 12@300x.jpg" alt="image of hands and jigsaw pieces">
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="download-container">
+        <img src="images/LIfe Vault Icon Black.png" alt="Life Vault logo" id="life-vault">
+        <h2>Download our app</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, reprehenderit.
+        <br>
+        <div class="download-button-container">
+            <button class="download-button">Download on the <br> App Store</button>
+            <button class="download-button">Get it on <br>Google Play</button>
+        </div>
+
+    </div>
+
+    <!-- Footer  -->
+    <div id="footer-placeholder"></div>
+
+
+</body>
+
+</html>
