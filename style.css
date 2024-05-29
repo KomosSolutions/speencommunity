@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-size: 14px;
+    font-family: Arial, sans-serif;
 }
 
 /* This is template for white background */
@@ -26,7 +27,7 @@ body {
     display: flex;
     width: 100%;
     position: relative;
-    height: 460px;
+    height: 465px;
 }
 
 /* Container for text and image   */
@@ -114,14 +115,7 @@ body {
     }
 }
 
-
-
-
-/* Made the font Arial */
-body {
-    font-family: Arial, sans-serif;
-}
-
+/* header / nav bar styling */
 
 .header-wrapper {
     display: flex;
@@ -247,6 +241,11 @@ li {
     margin-bottom: 10px;
 }
 
+/* this is used for the spacing between the bullet points text */
+.tick-text p {
+    margin-bottom: 0.5px;
+}
+
 .tick-text img {
     width: 25px;
     height: 25px;
@@ -274,7 +273,7 @@ li {
     margin-top: 1px;
 }
 
-/* below is styling the link start your free trial */
+/* below is styling the link sign up for free */
 .trial-links {
     color: #10d3bb;
     font-weight: bold;
@@ -296,11 +295,6 @@ li {
         width: 15px;
         height: 15px;
         margin-right: 10px;
-    }
-
-    .grey-button {
-        font-size: 0.7rem;
-        margin: 5px;
     }
 
     .callout {
@@ -354,11 +348,7 @@ li {
         margin-right: 10px;
     }
 
-    .grey-button {
-        font-size: 0.7rem;
-        margin: 5px;
-    }
-
+   
     .callout {
         position: relative;
         bottom: 30px;
@@ -404,31 +394,23 @@ li {
     text-decoration: none;
 }
 
-.grey-button:first-child {
-    margin-left: 50px;
-    /* Apply margin only to the first button */
-}
 
 .grey-button:hover {
     background-color: #0056b3;
 }
 
-@media screen and (max-width: 768px) {
-    .offer {
-        width: 90%;
-        /* Adjust width for smaller screens */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .offer {
-        width: 90%;
-        /* Adjust width for smaller screens */
-    }
-}
-
-
+/* PRICING  */
 /* pricing container styling */
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 100%; */
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
 
 .pricing-title {
     display: flex;
@@ -447,11 +429,75 @@ h3 {
     margin-top: 8px;
 }
 
-.pricing-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* price plans table styling */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.comparison-table {
     width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.comparison-table th {
+    /* background-color: #f2f2f2; */
+    font-weight: bold;
+}
+
+.premium {
+    background-color: #d9ead3;
+}
+
+.bronze {
+    background-color: #b45f06;
+    color: black;
+}
+
+.silver {
+    background-color: #d9d9d9;
+}
+
+.gold {
+    background-color: #ffe599;
+}
+
+.tick {
+    color: #10d3bb;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.8rem;
+        text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.5rem;
+        padding: 6px;
+        text-wrap: wrap;
+    }
+
+    .comparison-table th {
+        font-size: 0.6rem;
+        text-wrap: wrap;
+    }
 }
 
 /* pricing container styling */
@@ -468,11 +514,12 @@ h3 {
 @media only screen and (max-width: 480px) {
     .pricing-container {
         padding-bottom: 20px;
-        /* Adjusted padding for smaller screens */
+        padding-left: 20px;
+    padding-right: 20px;
     }
 }
 
-/* testimonials styling */
+/* Testimonials styling */
 
 .testimonials-title {
     text-align: center;
@@ -810,7 +857,7 @@ h3 {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
-    
+
     .grey-button {
         font-size: 0.6rem;
         height: 30px;
@@ -821,7 +868,7 @@ h3 {
 }
 
 @media only screen and (max-width: 480px) {
-    
+
     .grey-button {
         font-size: 0.5rem;
         height: 30px;
@@ -831,531 +878,7 @@ h3 {
     }
 }
 
-
-
-/* safeguard styling when i try to remove this it messes up format on unique section??
- */
-.two-column-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightgreen; */
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.safeguard-image {
-    flex: 0 0 45%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-}
-
-.safeguard-image img {
-    width: 100%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-}
-
-.safeguard-content {
-    flex: 0 0 40%;
-    /* Take up 30% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 10px 20px;
-    /* Add padding for spacing */
-    background-color: lightgrey;
-    border-radius: 20px;
-    margin: 10px 20px;
-
-    /* CAN'T GET TO WORK  */
-    .safeguard-content h2 {
-        text-align: center;
-        /* Center the heading */
-    }
-
-    .safeguard-content p {
-        text-align: justify;
-        /* Justify the paragraph text */
-    }
-
-}
-
-.tick-text p {
-    margin-bottom: 1px;
-}
-
-
-
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-    .two-column-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-        display: flex;
-        /* Use flexbox for layout */
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        /* Center items horizontally */
-    }
-
-
-    .safeguard-content {
-        width: 95%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .safeguard-image {
-        width: 70%;
-        /* Adjust width to your preference */
-        height: auto;
-        /* Let the height adjust automatically */
-        max-width: 100%;
-        /* Ensure the image does not exceed its container */
-    }
-
-    .safeguard-content {
-        font-size: 0.5rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px 20px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .tick-text p {
-        margin-bottom: 1px;
-        /* Adjust this value as needed */
-    }
-}
-
-
-@media only screen and (max-width: 480px) {
-    .two-column-container {
-        padding: 10px 10px 0px 10px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-        display: flex;
-        /* Use flexbox for layout */
-        flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        /* Center items horizontally */
-    }
-
-
-    .safeguard-content {
-        width: 95%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .safeguard-image {
-        width: 70%;
-        /* Adjust width to your preference */
-        height: auto;
-        /* Let the height adjust automatically */
-        max-width: 100%;
-        /* Ensure the image does not exceed its container */
-    }
-
-    .safeguard-content {
-        font-size: 0.4rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px 20px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .tick-text p {
-        margin-bottom: 1px;
-        /* Adjust this value as needed */
-    }
-}
-
-/* presenting a8 styling
- */
-.presenting-a8-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightblue; */
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-.presenting-a8-image {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-
-}
-
-.presenting-a8-image img {
-    width: 100%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-}
-
-.presenting-a8-content {
-    flex: 1;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 10px 40px;
-    margin: 10px 20px;
-    /* Add padding for spacing */
-    text-align: center;
-    background-color: lightgrey;
-    border-radius: 20px;
-}
-
-.presenting-a8-content h4 {
-    text-align: center;
-    /* Center-align the h2 element */
-}
-
-
-
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-    .presenting-a8-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-    }
-
-    .presenting-a8-image,
-    .presenting-a8-content {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-
-    }
-
-    .presenting-a8-content {
-        font-size: 0.8rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px 20px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-
-
-}
-
-
-
-/* Securely styling */
-
-.securely-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightgreen; */
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-.securely-image {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-}
-
-
-.securely-image img {
-    max-width: 100%;
-    /* Ensure the image does not exceed its container's width */
-    height: auto;
-    /* Maintain aspect ratio */
-    max-height: 600px;
-    /* Set the maximum height of the image */
-    display: block;
-    /* Remove any default spacing */
-    margin-left: auto;
-    /* Align the image to the right side */
-}
-
-
-.securely-content {
-    flex: 0 0 45%;
-    /* Take up 30% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 30px 0px;
-    /* Add padding for spacing */
-    background-color: lightgrey;
-    border-radius: 20px;
-    margin: 10px 20px;
-}
-
-
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-    .securely-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-    }
-
-    .securely-image,
-    .securely-content {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-
-    }
-
-    .securely-content {
-        font-size: 0.8rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px 20px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-
-}
-
-@media only screen and (max-width: 480px) {
-    .securely-container {
-        padding: 0px 30px 5px 5px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-    }
-
-    .securely-image,
-    .securely-content {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-
-    }
-
-    .securely-content {
-        font-size: 0.7rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px 20px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-
-}
-
-/* ABOUT US STYLING */
-
-.about-us-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightblue; */
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.about-us-image-container {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    /* border: solid 5px pink; */
-
-}
-
-.about-us-image-container img {
-    width: 100%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-    /* border: solid 5px yellow; */
-}
-
-.about-us-text {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 30px 0px;
-    margin: 0 100px 0 20px;
-    /* Add padding for spacing */
-    /* border: solid 5px pink; */
-}
-
-
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-    .about-us-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .about-us-image-container,
-    .about-us-text {
-        width: 95%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .about-us-image-container {
-        padding-top: 20px;
-    }
-
-    .about-us-text {
-        font-size: 0.8rem;
-
-        /* Decrease font size for smaller screens */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .about-us-container {
-        padding: 40px 20px 20px 10px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .about-us-image-container,
-    .about-us-text {
-        width: 95%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .about-us-image-container {
-        padding-top: 20px;
-    }
-
-    .about-us-text {
-        font-size: 0.7rem;
-
-        /* Decrease font size for smaller screens */
-    }
-
-
-}
-
-.unique-selling-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightgreen; */
-    padding-left: 20px;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-}
-
-.unique-selling-image {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-}
-
-.unique-selling-image img {
-    width: 100%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-}
-
-.unique-selling-content {
-    flex: 0 0 45%;
-    /* Take up 30% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 30px 10px;
-    /* Add padding for spacing */
-    background-color: lightgrey;
-    border-radius: 20px;
-    margin: 20px;
-}
-
-
-@media screen and (max-width: 768px) {
-    .unique-selling-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-        flex-direction: column;
-        /* Change flex direction to stack elements vertically */
-        align-items: stretch;
-        /* Stretch items to full width */
-    }
-
-    .unique-selling-image,
-    .unique-selling-content {
-        flex: 0 0 100%;
-        /* Set flex basis to 100% to make them stack vertically */
-    }
-
-    .unique-selling-content {
-        font-size: 0.6rem;
-        /* Decrease font size for smaller screens */
-        margin: 10px;
-        /* Adjust margin */
-        padding: 10px;
-        /* Adjust padding */
-    }
-}
-
-
-@media only screen and (max-width: 480px) {
-    .unique-selling-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-        flex-direction: column;
-        /* Change flex direction to stack elements vertically */
-        align-items: stretch;
-        /* Stretch items to full width */
-    }
-
-    .unique-selling-image,
-    .unique-selling-content {
-        flex: 0 0 100%;
-        /* Set flex basis to 100% to make them stack vertically */
-    }
-
-    .unique-selling-content {
-        font-size: 0.5rem;
-        /* Decrease font size for smaller screens */
-        margin: 10px;
-        /* Adjust margin */
-        padding: 10px;
-        /* Adjust padding */
-    }
-}
-
-/* company update styling */
-
-/* .company-update{
-    display: flex;
-    align-items: center;
-    background-color:#10d3bb;
-    font-size: 2rem;
-} */
-
-
-/* Company update styling
- */
-
+/* Company container video update section  */
 .company-container {
     display: flex;
     justify-content: center;
@@ -1501,292 +1024,6 @@ h3 {
         /* Adjust the font size as needed */
     }
 }
-
-
-/* about our team styling
- */
-
-.team-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightblue; */
-    padding-left: 20px;
-}
-
-.team-image-container {
-    flex: 0 0 45%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.team-image-container img {
-    width: 100%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-
-}
-
-.team-content {
-    flex: 0 0 40%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 30px 30px;
-    /* Add padding for spacing */
-}
-
-.team-content h2 {
-    text-align: center;
-    /* Center-align the h2 element */
-}
-
-.team-content h4 {
-    text-align: left;
-    /* Left-align the h4 element */
-}
-
-
-
-/* our-prices styling */
-
-.our-prices-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightblue; */
-    padding-left: 20px;
-}
-
-.our-prices-image-container {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    /* border: solid 5px pink; */
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.our-prices-image-container img {
-    width: 90%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-    /* border: solid 5px yellow; */
-
-}
-
-.our-prices-text {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 30px 0px;
-    margin: 0 60px 0 70px;
-    /* Add padding for spacing */
-    /* border: solid 5px pink; */
-}
-
-
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-
-    .our-prices-container,
-    .streamline-container,
-    .security-container,
-    .team-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .our-prices-image-container,
-    .our-prices-text,
-    .streamline-image-container,
-    .security-image-container,
-    .team-image-container {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .our-prices-text,
-    .streamline-content,
-    .security-content,
-    .pricing-title,
-    .team-content {
-        font-size: 0.8rem;
-        /* Decrease font size for smaller screens */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-
-    .our-prices-container,
-    .security-container,
-    .team-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .streamline-container {
-        padding: 10px 30px 10px 10px;
-    }
-
-    .our-prices-image-container,
-    .our-prices-text,
-    .streamline-image-container,
-    .security-image-container,
-    .team-image-container {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .our-prices-text,
-    .streamline-content,
-    .security-content,
-    .pricing-title,
-    .team-content {
-        font-size: 0.7rem;
-        /* Decrease font size for smaller screens */
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .our-prices-text {
-        margin: 0 40px 0 0;
-
-
-        /* Adjust margin for smaller screens */
-    }
-
-    .our-prices-container,
-    .color-container,
-    .grey-container {
-        height: 350px;
-    }
-
-    .our-prices-image-container {
-        padding-left: 15px;
-    }
-
-
-
-    .streamline-content {
-        margin: 0 20px;
-        /* Adjust margin for smaller screens */
-    }
-
-    .security-image-container {
-        margin-right: 30px;
-    }
-
-
-}
-
-
-@media only screen and (max-width: 480px) {
-
-    .our-prices-text {
-        margin: 0 40px 0 0;
-
-
-        /* Adjust margin for smaller screens */
-    }
-
-    .our-prices-container,
-    .color-container,
-    .grey-container {
-        height: 350px;
-    }
-
-    .our-prices-image-container {
-        padding-left: 15px;
-    }
-
-
-
-    .streamline-content {
-        margin: 0 20px;
-        /* Adjust margin for smaller screens */
-    }
-
-    .security-image-container {
-        margin-right: 30px;
-    }
-
-
-}
-
-/* streamline styling */
-/* Also used for highest standards of security styling on page Our prices */
-
-.streamline-container,
-.security-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightseagreen; */
-    padding-left: 20px;
-}
-
-.streamline-image-container,
-.security-container {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 10px
-}
-
-.streamline-image-container img,
-.security-image-container img {
-    width: 90%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-
-}
-
-.streamline-content {
-    flex: 0 0 35%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 20px 0px;
-    /* Add padding for spacing */
-
-}
-
-
-.security-content {
-    flex: 0 0 35%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 20px 0px;
-    /* Add padding for spacing */
-    margin: 0 30px 0 50px;
-
-}
-
-
-
-
 
 /* Contact us Happy to help styling  */
 .wrapper {
@@ -2164,73 +1401,3 @@ input[type="submit"]:hover {
 
 
 
-/* price plans table  */
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    table-layout: fixed;
-}
-
-.comparison-table th,
-.comparison-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-.comparison-table th {
-    /* background-color: #f2f2f2; */
-    font-weight: bold;
-}
-
-.premium {
-    background-color: #d9ead3;
-}
-
-.bronze {
-    background-color: #b45f06;
-    color: black;
-}
-
-.silver {
-    background-color: #d9d9d9;
-}
-
-.gold {
-    background-color: #ffe599;
-}
-
-.tick {
-    color: #10d3bb;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-
-    .comparison-table th,
-    .comparison-table td {
-        font-size: 0.8rem;
-        text-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .comparison-table th,
-    .comparison-table td {
-        font-size: 0.5rem;
-        padding: 6px;
-        text-wrap: wrap;
-    }
-
-    .comparison-table th {
-        font-size: 0.6rem;
-        text-wrap: wrap;
-    }
-}
