@@ -45,7 +45,7 @@ body {
     margin-right: 5%;
     margin-left: 5%;
     position: relative;
-  
+
 }
 
 /* image container */
@@ -55,7 +55,7 @@ body {
     z-index: 100;
     height: 400px;
     align-items: center;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 /*  image styling in the image container */
@@ -185,9 +185,6 @@ li {
     border-radius: 3px;
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
 
     /* Adjustments for smaller screens */
@@ -213,7 +210,6 @@ li {
         height: 50px;
     }
 
-    /* Adjust other styles as needed */
 }
 
 /* Additional media query */
@@ -236,17 +232,14 @@ li {
         font-size: 0.6rem;
     }
 
-
     #logo-image {
         height: 40px;
     }
-
-    /* Adjust other styles as needed */
 }
 
 /* Care for your loved ones section  */
 
-
+/* tick-text is used wherever we use the lifevault small logo as bullets */
 .tick-text {
     display: flex;
     align-items: center;
@@ -254,16 +247,11 @@ li {
     margin-bottom: 10px;
 }
 
-.tick-text h3 {
-    margin: 0;
-}
-
 .tick-text img {
     width: 25px;
     height: 25px;
     margin-right: 10px;
 }
-
 
 .callout {
     position: relative;
@@ -292,28 +280,7 @@ li {
     font-weight: bold;
     font-size: 1.1rem;
     text-decoration: none;
-
 }
-
-/* .callout-container {
-    padding: 15px;
-    background-color: #ccc;
-    color: black;
-    border-radius: 10px;
-  } */
-
-/* .closebtn {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.closebtn:hover {
-    color: lightgrey;
-} */
 
 @media only screen and (max-width: 768px) {
     .template-text {
@@ -323,11 +290,6 @@ li {
 
     a {
         font-size: .7rem;
-    }
-
-    .tick-text h3 {
-        font-size: 0.7rem;
-        /* Adjust the font size as needed */
     }
 
     .tick-text img {
@@ -386,11 +348,6 @@ li {
         font-size: 0.6rem;
     }
 
-    .tick-text h3 {
-        font-size: 0.6rem;
-        /* Adjust the font size as needed */
-    }
-
     .tick-text img {
         width: 15px;
         height: 15px;
@@ -435,7 +392,6 @@ li {
     }
 }
 
-
 .grey-button {
     color: white;
     background-color: slategray;
@@ -457,82 +413,10 @@ li {
     background-color: #0056b3;
 }
 
-
-/* What do we offer section */
-.what-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    padding-left: 20px;
-    /* border: 5px solid lightblue; */
-}
-
-
-.centred-heading {
-    text-align: center;
-
-}
-
-.offers-container {
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
-    /* border: 5px solid blue; */
-}
-
-.offer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-    /* Adjust as needed */
-    /* text-align: center; */
-    margin: 20px;
-    position: relative;
-    /* Ensure relative positioning for the container */
-    /* border: 5px solid pink; */
-    background-color: lightblue;
-    padding: 20px;
-}
-
-.offer img {
-    width: 60%;
-    /* Set width as needed */
-    /* height: 300px; */
-    /* Set height as needed */
-    display: block;
-    margin: 0 auto 10px;
-
-}
-
-
-.buttons-centred {
-    position: static;
-    /* changed this from absolute to static to show in firefox correctly */
-    bottom: 5%;
-    /* left: 65%; */
-    margin-left: 45%;
-    transform: translateX(-50%);
-}
-
-
 @media screen and (max-width: 768px) {
     .offer {
         width: 90%;
         /* Adjust width for smaller screens */
-    }
-
-    .buttons-centred {
-        position: static;
-        /* Change position to static */
-        margin-top: 20%;
-        /* Add margin to separate buttons from content */
-        margin-left: 45%;
-        text-align: center;
-        /* Center align buttons */
-        width: 50%;
-        /* font-size: 0.7rem; */
     }
 }
 
@@ -540,108 +424,6 @@ li {
     .offer {
         width: 90%;
         /* Adjust width for smaller screens */
-    }
-
-    .buttons-centred {
-        position: static;
-        /* Change position to static */
-        margin-top: 20%;
-        /* Add margin to separate buttons from content */
-        margin-left: 45%;
-        text-align: center;
-        /* Center align buttons */
-        width: 50%;
-        /* font-size: 0.7rem; */
-    }
-}
-
-/* secure container styling */
-
-.secure-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightblue; */
-    padding-left: 20px;
-}
-
-.secure-image-container {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-}
-
-.secure-image-container img {
-    width: 95%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-}
-
-.secure-content {
-    flex: 0 0 40%;
-    /* Take up   50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 30px 0px;
-    /* Add padding for spacing */
-}
-
-
-
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-    .secure-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .secure-image-container,
-    .secure-content {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .secure-content {
-        font-size: 0.8rem;
-        /* Decrease font size for smaller screens */
-    }
-
-    .streamline-content {
-        font-size: 0.7rem;
-        /* Decrease font size for smaller screens */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .secure-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .secure-image-container {
-        width: 100%;
-        padding-left: 20px;
-    }
-
-
-    .secure-content {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .secure-content {
-        font-size: 0.7rem;
-        /* Decrease font size for smaller screens */
-    }
-
-    .streamline-content {
-        font-size: 0.6rem;
-        /* Decrease font size for smaller screens */
     }
 }
 
@@ -668,148 +450,13 @@ h3 {
 .pricing-container {
     display: flex;
     flex-direction: column;
-    /* align-items: center;Vertically align content */
     justify-content: center;
-    /* made the containers big but the main headings left aligned */
     width: 100%;
-    /* border: solid 5px palevioletred; */
-    /* padding-bottom: 50px; */
-    /* background-color: #10d3bb; */
-
 }
-
-.pricing-plans {
-    display: flex;
-    /* border: solid 5px pink; */
-    justify-content: center;
-    /* align-items: left; Vertically align content  */
-    padding: 30px 110px;
-    flex-wrap: wrap;
-
-
-}
-
-.pricing-box {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: flex-start;
-    margin: 0 10px;
-    /* Adjusted margin for smaller screens */
-    padding: 10px 10px 10px 30px;
-    background-color: white;
-    border-radius: 20px;
-    max-width: 300px;
-    /* Limit the width of boxes on smaller screens */
-    margin-bottom: 20px;
-    /* Add some space between boxes */
-}
-
-
-
-
-.pricing-box h2,
-.pricing-box h1,
-.pricing-box h4 {
-    text-align: left;
-    margin: 5px 0;
-
-}
-
-/* 
-.free-plan {
-    border: 2px pink solid;
-
-}
-
-.basic-plan {
-
-    border: 2px yellow solid;
-}
-
-.pro-plan {
-
-    border: 2px black solid;
-} */
-
-/* Style for the buttons */
-.btn {
-
-    color: white;
-    background-color: #10d3bb;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5%;
-    /* font-size: 1rem; */
-    border: none;
-    cursor: pointer;
-
-}
-
-
-/* .buttons-set-bottom {
-    display: flex;
-    /* flex-direction: column; */
-/* justify-content:end; */
-/* align-self: flex-end;
-    
-} */
-
-.buttons-set-bottom {
-    display: flex;
-    justify-content: center;
-    /* Center the buttons horizontally */
-    margin-top: auto;
-    /* Push the buttons to the bottom */
-    margin-bottom: 10px;
-    /* Add some space between buttons and the container bottom */
-    padding-left: 5%;
-}
-
-
-.btn {
-    font-size: 0.6rem;
-    font-weight: normal;
-}
-
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-
 
 /* pricing container styling */
 
-@media only screen and (max-width: 1024px) {
-    .pricing-box {
-        max-width: 250px;
-        /* Adjusted max-width for smaller screens */
-        margin: 0 5px;
-        /* Adjusted margin for smaller screens */
-    }
-
-    .pricing-plans {
-        padding: 30px 20px;
-        /* Adjusted padding for smaller screens */
-    }
-}
-
 @media only screen and (max-width: 768px) {
-    .pricing-plans {
-        padding: 20px;
-        /* Adjusted padding for smaller screens */
-    }
-
-    .pricing-box {
-        max-width: 90%;
-        /* Adjusted max-width for smaller screens */
-        margin: 0 10px 20px auto;
-        /* Adjusted margin for smaller screens */
-        padding: 10px;
-        /* Adjusted padding for smaller screens */
-    }
 
     .pricing-title h1,
     .pricing-title h3 {
@@ -825,15 +472,11 @@ h3 {
     }
 }
 
-
-
-
 /* testimonials styling */
 
 .testimonials-title {
     text-align: center;
 }
-
 
 .testimonials-container {
     display: flex;
@@ -868,9 +511,6 @@ h3 {
     padding: 20px 0px;
 
 }
-
-
-
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -929,7 +569,6 @@ h3 {
     padding: 20px;
     margin: 20px;
     gap: 20px;
-
 }
 
 .download-button {
@@ -940,7 +579,6 @@ h3 {
     border-radius: 5px;
     padding: 10px;
 }
-
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -1115,8 +753,6 @@ h3 {
     }
 }
 
-
-
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .footer-content {
@@ -1172,70 +808,9 @@ h3 {
 /* FEATURES */
 /* Features page styling */
 
-
-.features-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightblue; */
-    padding-left: 20px;
-}
-
-.features-image-container {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    /* border: solid 5px pink; */
-}
-
-.features-image-container img {
-    width: 70%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-    /* border: solid 5px yellow; */
-}
-
-.features-text {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 30px 0px;
-    margin: 80px;
-    /* Added margin to make it more compact text */
-    /* border: solid 5px pink; */
-}
-
-
-
-
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
-    .features-image-container {
-        padding: 30px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .features-image-container,
-    .features-text {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .features-image-container {
-        padding-top: 20px;
-    }
-
-    .features-text {
-        font-size: 0.8rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px;
-    }
-
+    
     .grey-button {
         font-size: 0.6rem;
         height: 30px;
@@ -1246,27 +821,7 @@ h3 {
 }
 
 @media only screen and (max-width: 480px) {
-    .features-image-container {
-        padding: 30px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .features-image-container,
-    .features-text {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .features-image-container {
-        padding-top: 20px;
-    }
-
-    .features-text {
-        font-size: 0.7rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px;
-    }
-
+    
     .grey-button {
         font-size: 0.5rem;
         height: 30px;
@@ -1277,103 +832,8 @@ h3 {
 }
 
 
-/* ******* */
 
-/* Presenting passed on  */
-
-.presenting-passed-on-container {
-    display: flex;
-    flex-direction: row;
-    /* flex direction is set to row by default so could remove this) */
-    align-items: center;
-    /* Vertically align content */
-    /* border: solid 5px lightblue; */
-    padding-left: 20px;
-}
-
-.presenting-image {
-    flex: 0 0 50%;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-
-}
-
-.presenting-image img {
-    width: 95%;
-    /* Make the image responsive */
-    display: block;
-    /* Remove any default spacing */
-}
-
-.presenting-content {
-    flex: 1;
-    /* Take up 50% of the container width */
-    position: relative;
-    /* Position relative for absolute positioning */
-    padding: 10px 0px;
-    margin: 10px 40px;
-    /* Add padding for spacing */
-    text-align: center;
-    background-color: lightgrey;
-    border-radius: 20px;
-}
-
-.buttons-centred-trial {
-    position: relative;
-    bottom: 10px;
-    left: 45%;
-    transform: translateX(-50%);
-
-}
-
-
-
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-    .presenting-passed-on-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-    }
-
-    .presenting-image,
-    .presenting-content {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .presenting-content {
-        font-size: 0.8rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px 20px;
-    }
-
-}
-
-@media only screen and (max-width: 480px) {
-    .presenting-passed-on-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-bottom: 5px;
-    }
-
-    .presenting-image,
-    .presenting-content {
-        width: 100%;
-        /* Set width to 100% for smaller screens */
-    }
-
-    .presenting-content {
-        font-size: 0.7rem;
-        /* Decrease font size for smaller screens */
-        margin: 20px 20px;
-    }
-
-}
-
-/* safeguard styling
+/* safeguard styling when i try to remove this it messes up format on unique section??
  */
 .two-column-container {
     display: flex;
@@ -1565,14 +1025,6 @@ h3 {
 }
 
 
-.buttons-centred-trial {
-    position: relative;
-    bottom: 10px;
-    left: 45%;
-    transform: translateX(-50%);
-
-}
-
 
 
 /* Media Query for smaller screens */
@@ -1599,16 +1051,6 @@ h3 {
     }
 
 
-    .buttons-centred-trial {
-        position: relative;
-        bottom: auto;
-        /* Reset bottom position */
-        left: 50%;
-        /* Center horizontally */
-        transform: translateX(-50%);
-        margin-top: 10px;
-        /* Add margin from the top */
-    }
 
 }
 
