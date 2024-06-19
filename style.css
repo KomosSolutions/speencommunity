@@ -1,117 +1,182 @@
+/* colours blue #154294 plum #972183 */
+
 body {
     margin: 0;
-    font-size: 14px;
+    font-size: 1.2rem;
+    line-height: 1.4;
     font-family: Arial, sans-serif;
 }
 
-/* This is template for white background */
+/* Style specifically for the link within the .big.facebook-text paragraph */
+.big.facebook-text a {
+    color: #1877F2; /* Facebook blue */
+    text-decoration:underline; 
+    font-weight: bold; 
+    font-size: 1.5rem;
+}
+
+/* Additional hover effect for the link */
+.big.facebook-text a:hover {
+    text-decoration: underline; 
+    color: black; 
+}
+.big {
+    line-height: 1.8;
+    font-size: 1.3rem;
+}
+/* container used for Privacy policy  */
+.template-privacy-container {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+.template-privacy-container{
+    padding: 0 30px 0 30px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+/* This is template for plum background */
 .template-empty-container {
     display: flex;
     width: 100%;
     position: relative;
-    height: 460px;
+    background-color: #972183;
+    color: white;
+    padding: 20px 0;
+    height: 500px;
 }
 
-/* A green angled block of colour */
-.color-container {
-    display: flex;
-    background-color: #42DEC4;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 80% 70%, 0% 90%);
-    width: 100%;
-    position: relative;
-}
-
-/* A grey rectangle */
-.grey-container {
-    background-color: #E9E9E9;
+/* This is template for blue background */
+.template-blue-container {
     display: flex;
     width: 100%;
     position: relative;
-    height: 465px;
+    background-color: #154294;
+    color: white;
+    padding: 20px 0;
 }
 
-/* Container for text and image   */
+/* This is template for white background */
+.template-white-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    height: 500px;
+}
+
+/* Container for text and image */
 .template-row-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
     padding-left: 5%;
     padding-right: 5%;
+    width: 100%;
 }
 
 /* text container */
 .template-text {
-    flex: 0 0 40%;
+    flex: 1;
     margin-right: 5%;
     margin-left: 5%;
-    position: relative;
-
 }
 
 /* image container */
 .template-image-container {
-    flex: 0 0 50%;
+    flex: 1;
     display: flex;
-    z-index: 100;
-    height: 400px;
+    justify-content: center;
     align-items: center;
-    padding-top: 20px;
 }
 
-/*  image styling in the image container */
 .template-image-container img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
     object-fit: contain;
+    max-width: 100%;
     border-radius: 10px;
 }
+
 
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 1.1rem;
-        /* Adjust width for smaller screens */
-
     }
 
     h2 {
         font-size: 0.8rem;
-        /* Adjust width for smaller screens */
-
     }
 
-    h3,
-    h4,
-    p {
+    h3, h4, p {
         font-size: 0.8rem;
-        /* Adjust width for smaller screens */
+    }
 
+    .template-row-container {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .template-text, .template-image-container {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .template-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .template-text p.big {
+        font-size: 0.8rem;
+    }
+
+    .template-empty-container,
+    .template-blue-container,
+    .template-white-container {
+        height: auto; /* Adjust to auto height for better responsiveness */
+        padding: 20px 0; /* Adjust padding if needed */
     }
 }
 
-/* Additional media query */
-@media only screen and (max-width: 480px) {
-
+@media screen and (max-width: 480px) {
     h1 {
         font-size: 1rem;
-        /* Adjust width for smaller screens */
-
     }
 
     h2 {
         font-size: 0.7rem;
-        /* Adjust width for smaller screens */
-
     }
 
-    h3,
-    h4,
-    p {
+    h3, h4, p {
         font-size: 0.7rem;
-        /* Adjust width for smaller screens */
+        line-height: 1;
+    }
 
+    .template-privacy-container,
+    .template-text h1 {
+        font-size: 1rem;
+    }
+
+    .template-text p.big
+    {
+        font-size: 0.7rem;
+    }
+
+    .template-empty-container,
+    .template-blue-container,
+    .template-white-container {
+        height: auto; /* Adjust to auto height for better responsiveness */
+        padding: 20px 0; /* Adjust padding if needed */
     }
 }
 
@@ -129,11 +194,11 @@ body {
 }
 
 #logo-image {
-    height: 70px;
+    height: 200px;
 }
 
 .navigation {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 ul {
@@ -155,7 +220,7 @@ li {
 }
 
 .nav-buttons {
-    background-color: #10d3bb;
+    background-color: #972183;
     /* Light green color */
     border: none;
     height: 30px;
@@ -164,7 +229,7 @@ li {
     /*  rounded corner radius */
     cursor: pointer;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: bold;
 
 }
@@ -174,9 +239,10 @@ li {
 }
 
 .nav-link:hover {
-    background-color: #10d3bb;
+    background-color: #154294;
     padding: 3px;
     border-radius: 3px;
+    color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -231,55 +297,7 @@ li {
     }
 }
 
-/* Care for your loved ones section  */
 
-/* tick-text is used wherever we use the lifevault small logo as bullets */
-.tick-text {
-    display: flex;
-    align-items: center;
-    /* Center items vertically */
-    margin-bottom: 10px;
-}
-
-/* this is used for the spacing between the bullet points text */
-.tick-text p {
-    margin-bottom: 0.5px;
-}
-
-.tick-text img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-
-.callout {
-    position: relative;
-    bottom: 0px;
-    right: 20px;
-    margin-left: 20px;
-    max-width: 300px;
-}
-
-.callout-header {
-    padding: 10px 15px;
-    background: white;
-    font-size: 1rem;
-    color: black;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.callout-header h4 {
-    margin-top: 1px;
-}
-
-/* below is styling the link sign up for free */
-.trial-links {
-    color: #10d3bb;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-decoration: none;
-}
 
 @media only screen and (max-width: 768px) {
     .template-text {
@@ -291,43 +309,7 @@ li {
         font-size: .7rem;
     }
 
-    .tick-text img {
-        width: 15px;
-        height: 15px;
-        margin-right: 10px;
-    }
-
-    .callout {
-        position: relative;
-        bottom: 40px;
-        right: 0;
-        margin: 20px auto;
-        /* Center the callout horizontally */
-        max-width: 90%;
-        /* Adjust the max-width to fit smaller screens */
-        padding: 2px;
-    }
-
-    .callout-header {
-        padding: 10px 15px;
-        background: white;
-        font-size: 0.7rem;
-        /* Adjust the font size as needed */
-        color: black;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .trial-links {
-        font-size: 0.8rem;
-        color: #10d3bb;
-        /* Adjust the font size as needed */
-    }
-
-    .color-container,
-    .grey-container {
-        height: 350px;
-    }
+    
 }
 
 
@@ -342,62 +324,12 @@ li {
         font-size: 0.6rem;
     }
 
-    .tick-text img {
-        width: 15px;
-        height: 15px;
-        margin-right: 10px;
-    }
 
-   
-    .callout {
-        position: relative;
-        bottom: 30px;
-        right: 0;
-        margin: 20px auto;
-        /* Center the callout horizontally */
-        max-width: 90%;
-        /* Adjust the max-width to fit smaller screens */
-        padding: 2px;
-    }
-
-    .callout-header {
-        padding: 5px 10px;
-        background: white;
-        font-size: 0.7rem;
-        /* Adjust the font size as needed */
-        color: black;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .trial-links {
-        font-size: 0.7rem;
-        color: #10d3bb;
-        /* Adjust the font size as needed */
-    }
-
-    .color-container,
-    .grey-container {
-        height: 350px;
-    }
-}
-
-.grey-button {
-    color: white;
-    background-color: slategray;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5%;
-    /* font-size: 1rem; */
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
 }
 
 
-.grey-button:hover {
-    background-color: #0056b3;
-}
+
+
 
 /* OUR PLANS PRICING  */
 /* pricing container styling */
@@ -409,7 +341,7 @@ li {
     /* width: 100%; */
     padding-left: 20px;
     padding-right: 20px;
-   
+
 }
 
 .pricing-title {
@@ -471,9 +403,7 @@ body {
     background-color: #ffe599;
 }
 
-.tick {
-    color: #10d3bb;
-}
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -515,7 +445,7 @@ body {
     .pricing-container {
         padding-bottom: 20px;
         padding-left: 20px;
-    padding-right: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -596,7 +526,7 @@ body {
 /* Footer styles */
 
 .footer {
-    background-color: rgb(61, 60, 60);
+    background-color: #27A038;
     padding: 20px;
 }
 
@@ -612,8 +542,8 @@ body {
 }
 
 .footer-links {
-    margin-left: 100px;
-    /* this what I did to move the Security, privacy policy line etc across from the logo */
+    display: flex;
+    align-items: center;
 }
 
 .footer-links a {
@@ -774,31 +704,6 @@ body {
 }
 
 
-/* FEATURES */
-/* Features page styling */
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
-
-    .grey-button {
-        font-size: 0.6rem;
-        height: 30px;
-        padding: 5px;
-        margin: 2px;
-
-    }
-}
-
-@media only screen and (max-width: 480px) {
-
-    .grey-button {
-        font-size: 0.5rem;
-        height: 30px;
-        padding: 5px;
-        margin: 2px;
-
-    }
-}
 
 /* Company container video update section  */
 .company-container {
@@ -949,135 +854,62 @@ body {
 
 /* Contact us Happy to help styling  */
 .wrapper {
-    background-color: #10d3bb;
+    background-color: #972183;
     position: relative;
     height: auto;
 }
 
-.help-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
+
+
+.contact-text, .email-text {
+    text-align: center;
 }
 
-.help-content {
-    flex: 1;
-    padding-right: 70px;
-    align-self: center;
-    color: black;
-    margin-left: 130px;
-    margin-right: 130px;
-    /* Text color for left side */
 
 
-}
-
-.form-container {
-    flex: 1;
-    background-color: white;
-    /* White background color for form container */
-    padding: 20px;
-    border-radius: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-
-}
-
-label {
-    margin-bottom: 5px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-
-
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(225, 221, 221);
-    border: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-input[type="submit"] {
-    padding: 10px;
-    background-color: slategrey;
+.email-text a{
     color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    width: 30%;
-    align-self: center;
-    font-size: 1rem;
-
+    font-weight: bold;
+    text-decoration: none;
 }
 
-input[type="submit"]:hover {
-    background-color: #007bff;
+.email-text a:hover {
+    text-decoration: underline;
 }
 
 
-/* Media Query for smaller screens */
-@media only screen and (max-width: 768px) {
-    .help-content {
-        font-size: 0.9rem;
-        /* Decrease font size for smaller screens */
-        padding-right: 10px;
-        /* Adjust padding for smaller screens */
-        margin-left: 30px;
-        margin-right: 30px;
-    }
 
-    .form-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-top: 10px;
-        /* Adjust margin for smaller screens */
-    }
+.facebook-text a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
 
-    input[type="text"],
-    input[type="email"],
-    textarea,
-    input[type="submit"] {
-        font-size: 0.8rem;
-        /* Decrease font size for smaller screens */
+.facebook-text a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 80%; /* Default width for large screens */
+    height: 450px; /* Default height for large screens */
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    iframe {
+        width: 90%;
+        height: 400px;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .help-content {
-        font-size: 0.8rem;
-        /* Decrease font size for smaller screens */
-        padding-right: 10px;
-        /* Adjust padding for smaller screens */
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .form-container {
-        padding: 10px;
-        /* Adjust padding for smaller screens */
-        margin-top: 10px;
-        /* Adjust margin for smaller screens */
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea,
-    input[type="submit"] {
-        font-size: 0.7rem;
-        /* Decrease font size for smaller screens */
+/* Mobile view */
+@media (max-width: 480px) {
+    iframe {
+        width: 100%;
+        height: 350px;
     }
 }
+
 
 /* Contact us FAQS */
 
@@ -1088,6 +920,8 @@ input[type="submit"]:hover {
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #972183;
+    color: white;
 }
 
 .faq-image {
@@ -1108,7 +942,7 @@ input[type="submit"]:hover {
 }
 
 .faq-question {
-    border: 2px solid #10d3bb;
+    border: 2px solid #154294;
     margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
@@ -1185,8 +1019,8 @@ input[type="submit"]:hover {
 
 /* BACK TO TOP BUTTON */
 
-#back_to_top {
-    color: #10d3bb;
+/* #back_to_top {
+    color: black;
     height: auto;
     position: fixed;
     bottom: 20px;
@@ -1221,7 +1055,9 @@ input[type="submit"]:hover {
     -webkit-transition: all .2s ease 0s;
     -moz-transition: all .2s ease 0s;
     -o-transition: all .2s ease 0s;
-    border: 2px solid #10d3bb;
+    transition: all .2s ease 0s;
+
+    border: 2px solid black;
     background: 0 0
 }
 
@@ -1229,13 +1065,15 @@ input[type="submit"]:hover {
 #back_to_top span span,
 .q_steps_holder .circle_small .step_title,
 .q_steps_holder .circle_small span {
-    -webkit-transition: color .2s ease 0s;
-    -moz-transition: color .2s ease 0s;
-    -o-transition: color .2s ease 0s
-}
+    -webkit-transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    -o-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+
+} */
 
 /* #back_to_top span i, */
-#back_to_top span span {
+/* #back_to_top span span {
     font-size: 22px;
     color: #b0b0b0;
     line-height: 52px
@@ -1268,12 +1106,12 @@ input[type="submit"]:hover {
     vertical-align: baseline;
     outline: 0;
 
-}
-
+} */
+/* 
 .fa-arrow-up:before {
     content: "\f062";
-}
-
+} */
+/* 
 @media screen and (max-width: 768px) {
     #back_to_top {
         bottom: 10px;
@@ -1288,6 +1126,4 @@ input[type="submit"]:hover {
         right: 10px;
 
     }
-}
-
-
+} */
