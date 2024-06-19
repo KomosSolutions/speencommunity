@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speen Community Cafe</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Add viewport meta tag -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("header_index.html");
+        });
+        $(function () {
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY9M553L24"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JY9M553L24');
+    </script>
+</head>
+
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="template-empty-container">
+        <div class="template-row-container">
+            <div class="template-text">
+                <h1>Welcome to the Speen <br>Community Cafe </h1>
+                <p class="big">
+                    We are a 'pop-up' cafe, kindly hosted by The Starting Gate pub, every Wednesday between 2-4pm. Run
+                    entirely by local volunteers, we serve homemade cakes, biscuits, tea, coffee and squash. We also
+                    bring board games, newspapers, colouring and crafts.
+                </p>
+                <p>
+
+                </p>
+
+            </div>
+
+            <div class="template-image-container">
+                <img src="images/cafe_tea_cup.png" alt="image of teacup and saucer">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Next container -->
+    <div class="template-white-container">
+        <div class="template-row-container">
+            <div class="template-image-container">
+                <img src="images/cafe_people_pub.png" alt="image">
+            </div>
+            <div class="template-text">
+                <h1>Community</h1>
+                <p class="big">Everyone is welcome at the community cafe.  Please join us  for cakes and other lovely treats. But mainly join us for community!!! We love chatting and seeing you all mingling. We are getting between 40-70 guests a week now, so come out of your comfort zone and engage with us. We have LOVELY people here. 
+                    Every Wednesday 2-4pm @ The Starting Gate pub, Brummell Rd, Speen, Newbury. 
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--
+         Next container
+     -->
+    <div class="template-empty-container">
+        <div class="template-row-container">
+            <div class="template-text">
+                <h1>In the Press! </h1>
+                <p class="big">Speen Community Cafe in the Newbury 
+                    Weekly News.  We made it in to the press with Chris Tarrant judging our Bake Off 2023!!</p><br>
+
+            </div>
+            <div class="template-image-container">
+                <img src="images/news_bakeoff.png" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <!--
+         About us
+     -->
+     <div class="template-white-container">
+        <div class="template-row-container" id="about-jump">
+            <div class="template-image-container">
+                <img src="images/cakes.png" alt="events image">
+            </div>
+            <div class="template-text">
+                <h1>About Us</h1>
+                <p class="big">Kerry Bird the founder of the community cafe has been running it since 2021 along with a lovely group of volunteers. If you would like to help as a volunteer, please <a href="mailto:speencommunitycafe@gmail.com">send us an email.</a> </p><br>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <div class="company-container">
+            <img src="images/pexels-pixabay-35967.jpg" alt="London Gherkin" class="background-image">
+            <div class="container">
+                <div class="row"><strong>Company Update</strong></div>
+                <div class="video-container">
+                    <video id="company-video" poster="#" controls>
+                        <!-- The poster attribute in the <video> tag specifies an image to be shown while the video is downloading, or until the user hits the play button. In your code snippet, poster="#" indicates that there is no specific poster image provided; instead, it would use a placeholder. The controls attribute enables the browser's default video controls (such as play, pause, volume control, etc.) for the video element. -->
+    <!-- <source src="your-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="row">
+                    <button id="play-video">Play Video</button>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+    <div id="footer-placeholder"></div>
+
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            var backToTop = document.getElementById('back_to_top');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) {
+                    backToTop.classList.add('on');
+                } else {
+                    backToTop.classList.remove('on');
+                }
+            });
+
+            backToTop.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+
+</html>

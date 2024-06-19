@@ -1,0 +1,1129 @@
+/* colours blue #154294 plum #972183 */
+
+body {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-family: Arial, sans-serif;
+}
+
+/* Style specifically for the link within the .big.facebook-text paragraph */
+.big.facebook-text a {
+    color: #1877F2; /* Facebook blue */
+    text-decoration:underline; 
+    font-weight: bold; 
+    font-size: 1.5rem;
+}
+
+/* Additional hover effect for the link */
+.big.facebook-text a:hover {
+    text-decoration: underline; 
+    color: black; 
+}
+.big {
+    line-height: 1.8;
+    font-size: 1.3rem;
+}
+/* container used for Privacy policy  */
+.template-privacy-container {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+.template-privacy-container{
+    padding: 0 30px 0 30px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+/* This is template for plum background */
+.template-empty-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: #972183;
+    color: white;
+    padding: 20px 0;
+    height: 500px;
+}
+
+/* This is template for blue background */
+.template-blue-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: #154294;
+    color: white;
+    padding: 20px 0;
+}
+
+/* This is template for white background */
+.template-white-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    height: 500px;
+}
+
+/* Container for text and image */
+.template-row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+/* text container */
+.template-text {
+    flex: 1;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+/* image container */
+.template-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    h3, h4, p {
+        font-size: 0.8rem;
+    }
+
+    .template-row-container {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .template-text, .template-image-container {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .template-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .template-text p.big {
+        font-size: 0.8rem;
+    }
+
+    .template-empty-container,
+    .template-blue-container,
+    .template-white-container {
+        height: auto; /* Adjust to auto height for better responsiveness */
+        padding: 20px 0; /* Adjust padding if needed */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.7rem;
+    }
+
+    h3, h4, p {
+        font-size: 0.7rem;
+        line-height: 1;
+    }
+
+    .template-privacy-container,
+    .template-text h1 {
+        font-size: 1rem;
+    }
+
+    .template-text p.big
+    {
+        font-size: 0.7rem;
+    }
+
+    .template-empty-container,
+    .template-blue-container,
+    .template-white-container {
+        height: auto; /* Adjust to auto height for better responsiveness */
+        padding: 20px 0; /* Adjust padding if needed */
+    }
+}
+
+/* header / nav bar styling */
+
+.header-wrapper {
+    display: flex;
+    height: auto;
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    /* Distribute elements evenly */
+    align-items: center;
+    /* Align logo and navigation vertically */
+}
+
+#logo-image {
+    height: 200px;
+}
+
+.navigation {
+    font-size: 1.2rem;
+}
+
+ul {
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensure navigation items wrap to the next line on smaller screens */
+}
+
+li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-buttons {
+    background-color: #972183;
+    /* Light green color */
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    /*  rounded corner radius */
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.nav-buttons:hover {
+    background-color: #0056b3;
+}
+
+.nav-link:hover {
+    background-color: #154294;
+    padding: 3px;
+    border-radius: 3px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Adjustments for smaller screens */
+    .header-wrapper {
+        flex-direction: column;
+        /* Stack header items vertically */
+    }
+
+    .navigation {
+        font-size: 0.9rem;
+        /* Decrease font size */
+    }
+
+    .nav-buttons {
+        width: 60px;
+
+        /* Adjust button width */
+        font-size: 0.7rem;
+    }
+
+
+    #logo-image {
+        height: 50px;
+    }
+
+}
+
+/* Additional media query */
+@media only screen and (max-width: 480px) {
+
+    .header-wrapper {
+        flex-direction: column;
+        /* Stack header items vertically */
+    }
+
+    .navigation {
+        font-size: 0.8rem;
+        /* Decrease font size */
+    }
+
+    .nav-buttons {
+        width: 50px;
+
+        /* Adjust button width */
+        font-size: 0.6rem;
+    }
+
+    #logo-image {
+        height: 40px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .template-text {
+        font-size: 0.8rem;
+        /* Adjust the font size as needed */
+    }
+
+    a {
+        font-size: .7rem;
+    }
+
+    
+}
+
+
+/* Additional media query */
+@media only screen and (max-width: 480px) {
+    .template-text {
+        font-size: 0.7rem;
+        /* Adjust the font size as needed */
+    }
+
+    a {
+        font-size: 0.6rem;
+    }
+
+
+}
+
+
+
+
+
+/* OUR PLANS PRICING  */
+/* pricing container styling */
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 100%; */
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.pricing-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid 5px palevioletred; */
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    /* Adjust this margin as needed */
+    background-color: #10d3bb;
+}
+
+.pricing-title h1,
+h3 {
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+/* price plans table styling */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.comparison-table th {
+    /* background-color: #f2f2f2; */
+    font-weight: bold;
+}
+
+.premium {
+    background-color: #d9ead3;
+}
+
+.bronze {
+    background-color: #b45f06;
+    color: black;
+}
+
+.silver {
+    background-color: #d9d9d9;
+}
+
+.gold {
+    background-color: #ffe599;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.8rem;
+        text-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.5rem;
+        padding: 6px;
+        text-wrap: wrap;
+    }
+
+    .comparison-table th {
+        font-size: 0.6rem;
+        text-wrap: wrap;
+    }
+}
+
+/* pricing container styling */
+
+@media only screen and (max-width: 768px) {
+
+    .pricing-title h1,
+    .pricing-title h3 {
+        text-align: center;
+        /* Center the headings for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .pricing-container {
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* download styling to hide this I changed display to none in download container it needs to be set to flex to make it show
+ */
+.download-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* Vertically align content */
+    /* border: solid 5px black; */
+    padding-left: 20px;
+    background-color: #10d3bb;
+}
+
+.download-button-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+}
+
+.download-button {
+    color: white;
+    background-color: rgb(61, 60, 60);
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .download-button-container {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .download-button {
+        font-size: 0.7rem;
+    }
+
+    .download-container {
+        font-size: .7rem;
+    }
+
+    #life-vault {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .download-button-container {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .download-button {
+        font-size: 0.7rem;
+    }
+
+    .download-container {
+        font-size: .7rem;
+    }
+
+    #life-vault {
+        height: 50px;
+    }
+}
+
+
+/* Footer styles */
+
+.footer {
+    background-color: #27A038;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.right-section {
+    display: flex;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+#life-vault-image {
+    height: 70px;
+    /* Set the desired height */
+    width: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add some spacing between the logo and the navigation links */
+}
+
+#life-vault {
+    height: 60px;
+    /* Set the desired height */
+    width: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add some spacing between the logo and the navigation links */
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 0px;
+    /* width was 50px changed to 0 to fix the back to top arrow */
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Set a specific color for each brand */
+
+/* Facebook
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  } */
+
+
+/* Twitter
+.fa-twitter {
+    display: none; /* Hide the Twitter icon */
+/* }   */
+/* X Icon */
+/* .fa-times {
+    background: #000; /* Background color for the X icon */
+/* color: #fff; Text color for the X icon */
+/* Add any additional styling for the X icon */
+/* } */
+/* .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   */
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    #life-vault-image {
+        height: 40px;
+        /* Adjust height for smaller screens if needed */
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #life-vault-image {
+        height: 35px;
+        /* Adjust height for smaller screens if needed */
+        margin-left: 10px;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        align-items: center;
+        font-size: .8rem;
+    }
+
+
+    .footer-links {
+        margin-left: 10px;
+        display: flex;
+        font-size: .8rem;
+
+    }
+
+    .copyright {
+        font-size: .8rem;
+    }
+
+    #life-vault-image {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-content {
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        align-items: center;
+        font-size: .7rem;
+    }
+
+
+    .footer-links {
+        margin-left: 10px;
+        display: flex;
+        font-size: .7rem;
+
+    }
+
+    .copyright {
+        font-size: .7rem;
+    }
+
+    #life-vault-image {
+        height: 45px;
+    }
+}
+
+
+
+/* Company container video update section  */
+.company-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #10d3bb;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    /* Position the container absolutely */
+    top: 50%;
+    /* Position the container 50% from the top */
+    left: 35%;
+    /* Position the container 50% from the left */
+    transform: translate(-50%, -50%);
+    /* Center the container */
+    text-align: center;
+    /* Center the content horizontally */
+    z-index: 1;
+    /* Ensure the container is above the image */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    font-size: 30px;
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio for responsive video */
+    overflow: hidden;
+    margin-bottom: 20px;
+    z-index: 1;
+    /* Ensure the video is stacked on top of the image */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+    /* z-index: -1; Ensure the background image stays behind other content */
+}
+
+#play-video {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #10d3bb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#play-video:hover {
+    background-color: #0eaba1;
+}
+
+
+@media screen and (max-width: 768px) {
+    .company-container {
+        /* max-width: 90%; */
+        font-size: 1rem;
+        /* Adjust the font size as needed */
+        /* left: 20%; Center the container horizontally */
+        /* transform: translateX(-50%); Center the container */
+        width: 100%;
+        /* Make the background image fill the container */
+        height: 40vh;
+        /* Maintain aspect ratio
+    }
+
+    .background-image {
+        width: 50%; /* Make the background image fill the container */
+        height: 60vh;
+        /* Maintain aspect ratio
+        bottom: auto; 
+        /* remove bottom positioning */
+        /* right: auto; Remove right positioning */
+    }
+
+    .container {
+        width: 30%;
+        height: 45%;
+        font-size: 0.9rem;
+    }
+
+    #play-video {
+        font-size: 0.8rem;
+        /* Adjust the font size as needed */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .company-container {
+        /* max-width: 90%; */
+        font-size: 0.9rem;
+        /* Adjust the font size as needed */
+        /* left: 20%; Center the container horizontally */
+        /* transform: translateX(-50%); Center the container */
+        width: 100%;
+        /* Make the background image fill the container */
+        height: 40vh;
+        /* Maintain aspect ratio
+    }
+
+    .background-image {
+        width: 50%; /* Make the background image fill the container */
+        height: 60vh;
+        /* Maintain aspect ratio
+        bottom: auto; 
+        /* remove bottom positioning */
+        /* right: auto; Remove right positioning */
+    }
+
+    .container {
+        width: 30%;
+        height: 45%;
+        font-size: 0.8rem;
+    }
+
+    #play-video {
+        font-size: 0.7rem;
+        /* Adjust the font size as needed */
+    }
+}
+
+/* Contact us Happy to help styling  */
+.wrapper {
+    background-color: #972183;
+    position: relative;
+    height: auto;
+}
+
+
+
+.contact-text, .email-text {
+    text-align: center;
+}
+
+
+
+.email-text a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.email-text a:hover {
+    text-decoration: underline;
+}
+
+
+
+.facebook-text a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.facebook-text a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 80%; /* Default width for large screens */
+    height: 450px; /* Default height for large screens */
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    iframe {
+        width: 90%;
+        height: 400px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    iframe {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+
+/* Contact us FAQS */
+
+.faq-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #972183;
+    color: white;
+}
+
+.faq-image {
+    flex: 0 0 45%;
+    position: relative;
+    padding-left: 20px;
+}
+
+.faq-image img {
+    width: 90%;
+    display: block;
+}
+
+.faq-content {
+    flex: 0 0 50%;
+    position: relative;
+    padding: 30px 0px;
+}
+
+.faq-question {
+    border: 2px solid #154294;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+}
+
+.faq-question .question {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.faq-question.open .faq-answer {
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.open .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        padding-left: 0;
+        /* Remove left padding */
+    }
+
+    .faq-image,
+    .faq-content {
+        flex: 1;
+        /* Take up full width on smaller screens */
+        width: auto;
+        /* Reset width */
+        padding-left: 20px;
+    }
+
+    .faq-question {
+        position: relative;
+        /* Reset position */
+        margin-right: 20px;
+        /* Add margin to separate question and arrow */
+    }
+
+    .arrow {
+        position: static;
+        /* Reset position */
+        transform: none;
+        /* Reset transform */
+        margin-left: auto;
+        /* Move arrow to the right */
+    }
+}
+
+/* BACK TO TOP BUTTON */
+
+/* #back_to_top {
+    color: black;
+    height: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 10000;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    visibility: hidden;
+}
+
+#back_to_top.on {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#back_to_top.off {
+    right: 25px
+}
+
+#back_to_top>span {
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    text-decoration: none;
+    -o-border-radius: 52px;
+    -moz-border-radius: 52px;
+    -webkit-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    -o-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+
+    border: 2px solid black;
+    background: 0 0
+}
+
+#back_to_top span i,
+#back_to_top span span,
+.q_steps_holder .circle_small .step_title,
+.q_steps_holder .circle_small span {
+    -webkit-transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    -o-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+
+} */
+
+/* #back_to_top span i, */
+/* #back_to_top span span {
+    font-size: 22px;
+    color: #b0b0b0;
+    line-height: 52px
+}
+
+#back_to_top:hover>span {
+    background-color: #e8e8e8
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    background: 0 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: 0;
+
+} */
+/* 
+.fa-arrow-up:before {
+    content: "\f062";
+} */
+/* 
+@media screen and (max-width: 768px) {
+    #back_to_top {
+        bottom: 10px;
+        right: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #back_to_top {
+        bottom: 10px;
+        right: 10px;
+
+    }
+} */
