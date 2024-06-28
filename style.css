@@ -78,6 +78,8 @@ h1 {
     height: 500px;
 }
 
+
+
 /* Container for text and image */
 .template-row-container {
     display: flex;
@@ -144,7 +146,12 @@ h1 {
         font-size: 1.2rem;
     }
 
-    .template-text p.big {
+    .template-text p.big,
+    .big .facebook-text {
+        font-size: 0.8rem;
+    }
+
+    .big.facebook-text a {
         font-size: 0.8rem;
     }
 
@@ -175,11 +182,16 @@ h1 {
         font-size: 1rem;
     }
 
-    .template-text p.big
+    .template-text p.big,
+    .big .facebook-text
     {
         font-size: 0.7rem;
     }
 
+    
+    .big.facebook-text a {
+        font-size: 0.7rem;
+    }
     .template-empty-container,
     .template-blue-container,
     .template-white-container {
@@ -188,37 +200,54 @@ h1 {
     }
 }
 
-/* header / nav bar styling */
-
+/* Header / nav bar styling */
 .header-wrapper {
     display: flex;
     height: auto;
     background-color: white;
     color: black;
-    justify-content: space-between;
-    /* Distribute elements evenly */
+    justify-content: flex-start; /* Align items to the start */
     align-items: center;
-    /* Align logo and navigation vertically */
+    padding: 10px; /* Add padding for spacing */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.speen {
+    font-size: 2.4rem;
+    color: #154294;
+    margin-left: 5px;
+    font-weight: bold;
+    display: inline-block; /* Ensure the text stays inline with the logo */
+}
+
+/* Styling for "unity" part of "Community" */
+.unity {
+    font-style: italic;
+    color: #972183;
 }
 
 #logo-image {
     height: 200px;
+    margin-right: 5px; /* Space between logo and text */
+    margin-left: 5px;
 }
 
+/* Navigation styling */
 .navigation {
+    margin-left: auto; /* Push navigation to the right */
     font-size: 1.2rem;
 }
 
 ul {
     margin-right: 10px;
     display: flex;
-    flex-wrap: wrap;
-    /* Ensure navigation items wrap to the next line on smaller screens */
+    flex-wrap: wrap; /* Ensure navigation items wrap to the next line on smaller screens */
+    
 }
 
 li {
     list-style-type: none;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .nav-link {
@@ -234,12 +263,11 @@ li {
     height: 30px;
     width: 100px;
     border-radius: 5px;
-    /*  rounded corner radius */
+    /* Rounded corner radius */
     cursor: pointer;
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
-
 }
 
 .nav-buttons:hover {
@@ -254,88 +282,81 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
-
     /* Adjustments for smaller screens */
     .header-wrapper {
-        flex-direction: column;
-        /* Stack header items vertically */
+        flex-direction: row; /* Keep items in a row */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center the items */
+    }
+
+    .speen {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
     }
 
     .navigation {
-        font-size: 0.9rem;
-        /* Decrease font size */
+        margin-top: 10px; /* Add margin to separate navigation */
+        width: 100%; /* Full width navigation */
+        text-align: center; /* Center navigation items */
     }
 
     .nav-buttons {
-        width: 60px;
-
-        /* Adjust button width */
-        font-size: 0.7rem;
+        width: 80px; /* Adjust button width */
+        font-size: 0.9rem; /* Adjust button font size */
     }
-
 
     #logo-image {
-        height: 50px;
+        height: 100px; /* Adjust logo size */
     }
-
 }
 
-/* Additional media query */
 @media only screen and (max-width: 480px) {
-
+    /* Additional media query */
     .header-wrapper {
-        flex-direction: column;
-        /* Stack header items vertically */
+        flex-direction: row; /* Keep items in a row */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center the items */
+    }
+
+    .speen {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 
     .navigation {
-        font-size: 0.8rem;
-        /* Decrease font size */
+        margin-top: 10px; /* Add margin to separate navigation */
+        width: 100%; /* Full width navigation */
+        text-align: center; /* Center navigation items */
     }
 
     .nav-buttons {
-        width: 50px;
-
-        /* Adjust button width */
-        font-size: 0.6rem;
+        width: 60px; /* Adjust button width */
+        font-size: 0.7rem; /* Adjust button font size */
     }
 
     #logo-image {
-        height: 40px;
+        height: 80px; /* Adjust logo size */
     }
 }
 
-
-
+/* Additional styling for smaller screens */
 @media only screen and (max-width: 768px) {
     .template-text {
-        font-size: 0.8rem;
-        /* Adjust the font size as needed */
+        font-size: 0.8rem; /* Adjust the font size as needed */
     }
 
     a {
-        font-size: .7rem;
+        font-size: 0.7rem;
     }
-
-    
 }
 
-
-/* Additional media query */
 @media only screen and (max-width: 480px) {
     .template-text {
-        font-size: 0.7rem;
-        /* Adjust the font size as needed */
+        font-size: 0.7rem; /* Adjust the font size as needed */
     }
 
     a {
         font-size: 0.6rem;
     }
-
-
 }
-
-
 
 
 
@@ -575,6 +596,15 @@ body {
     margin-top: 20px;
     color: white;
 }
+
+/* Style for the Komos logo */
+#komos-logo {
+    height: 40px;
+    width: auto;
+    vertical-align: middle; /* Align the logo with the middle of the text */
+    margin-left: 0px; /* Optional: Add some space between the logo and the text */
+}
+
 
 #life-vault-image {
     height: 70px;
@@ -1134,4 +1164,5 @@ iframe {
         right: 10px;
 
     }
-} */
+} 
+
