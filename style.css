@@ -254,7 +254,7 @@ body {
     .navigation {
         margin-left: auto;
         /* Push navigation to the right */
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     ul {
@@ -281,12 +281,12 @@ body {
         /* Light green color */
         border: none;
         height: 30px;
-        width: 100px;
+        width: 110px;
         border-radius: 5px;
         /* Rounded corner radius */
         cursor: pointer;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: bold;
     }
 
@@ -387,7 +387,7 @@ body {
         }
 
         a {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
     }
 
@@ -398,7 +398,7 @@ body {
         }
 
         a {
-            font-size: 0.6rem;
+            font-size: 0.7rem;
         }
     }
 
