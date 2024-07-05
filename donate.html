@@ -50,27 +50,29 @@
             </div>
             <div class="template-text">
                 <h1>Please Donate</h1>
-<p class="big">
-    £1 would buy someone a coffee and a cake. <br>
-£10 would buy 10 people coffee and cake. <br>
-Donate for someone to have a Christmas dinner. <br>
-Donate for a child to go to the Panto. 
-
-    <h4>Via BACS transfer</h4>
-<h4>Speen Community Cafe</h4>
-<p>Account: 48616143</p>
-<p>Sort Code: 23-05-80</p> 
-<p>Reference: Cafe Donation</p>
-    <!-- We welcome volunteers to help make our community cafe a success. Whether you enjoy baking cakes, assisting with washing up, or helping with vacuuming, your contribution is greatly appreciated. 
-    If you're interested in volunteering, please <a href="mailto:speencommunitycafe@gmail.com">send us an email</a>. We’ll invite you to a session to see how you can get involved. -->
-</p>
-<!-- <p class="big facebook-text">
-    Stay updated on our latest events by visiting our <a href="https://www.facebook.com/profile.php?id=100076215541394&locale=en_GB" target="_blank">Speen Community Cafe Facebook page</a>.
-</p> -->
-
+                <p class="big">
+                    £1 would buy someone a coffee and a cake. <br>
+                    £10 would buy 10 people coffee and cake. <br>
+                    Donate for someone to have a Christmas dinner. <br>
+                    Donate for a child to go to the Panto.
+                </p>
+                <div class="bank-details-container">
+                    <div class="bank-details">
+                        <h4>Via BACS transfer</h4>
+                        <h4>Speen Community Cafe</h4>
+                        <p>Account: 48616143</p>
+                        <p>Sort Code: 23-05-80</p>
+                        <p>Reference: Cafe Donation</p>
+                    </div>
+                    <div class="donate-container">
+                        <h4>Via Online Donation</h4>
+                        <button class="donate-button" onclick="donate()">Donate</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- <div class="template-empty-container">
         <div class="template-row-container">
             <div class="template-text">
@@ -83,6 +85,12 @@ Donate for a child to go to the Panto.
         </div>
     </div> -->
     <div id="footer-placeholder"></div>
+    <script>
+        function donate() {
+            const url = 'https://square.link/u/Io41yroj';
+            window.open(url, '_blank');
+        }
+    </script>
 </body>
 
 </html>
