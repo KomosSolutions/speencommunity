@@ -80,6 +80,7 @@ body {
         color: black;
         padding: 20px 0;
         height: 500px;
+        border-top: solid 4px #972183 ;
     }
 
 
@@ -185,7 +186,7 @@ body {
         h4,
         p {
             font-size: 0.7rem;
-            line-height: 1;
+            line-height: 1.5;
         }
 
         .template-privacy-container,
@@ -286,7 +287,7 @@ body {
         /* Rounded corner radius */
         cursor: pointer;
         color: white;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: bold;
     }
 
@@ -330,7 +331,7 @@ body {
         .nav-buttons {
             width: 90px;
             /* Adjust button width */
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             /* Adjust button font size */
         }
 
@@ -369,7 +370,7 @@ body {
         .nav-buttons {
             width: 70px;
             /* Adjust button width */
-            font-size: 0.7rem;
+            font-size: 0.6rem;
             /* Adjust button font size */
         }
 
